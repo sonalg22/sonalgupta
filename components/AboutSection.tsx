@@ -38,22 +38,22 @@ const AboutSection = () => {
             <p>
               Academically, I am a senior Computer Science and Finance major
               at Northeastern University with interests in data engineering,
-              back end development, AI/ML, and fintech.
+              back end development, AI + ML, and fin-tech.
             </p>
             <br />
             <p>
-              I'm very involved in technical product development at Northeastern,
-              to help create software products for others, and I'm an active dancer,
-              musician, and leader. I'm looking to build my career path in a way
+              I&#39;m very involved in technical product development at Northeastern,
+              to help create software products for others, and I&#39;m an active dancer,
+              musician, and leader. I&#39;m looking to build my career path in a way
               that combines many of my artistic interests with my technical expertise.
             </p>
             <br />
             <p>
-              I'm so excited to use more of my love for'{" "}
+              I&#39;m so excited to use more of my love for{" "}
               <span className="font-bold text-teal-500">
                 computer science
               </span>{" "}
-              to aid in creating safe and clean designs that imrpove the 
+              to aid in creating safe and clean designs that improve the 
               world in some way. Please feel free to contact me for my resume,
               or just to chat (all socials below).
             </p>

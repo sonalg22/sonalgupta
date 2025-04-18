@@ -1,6 +1,7 @@
 "use client" // this is a client component
 
 import React, { useEffect, useRef, ReactNode } from "react"
+
 interface Props {
   offset?: string
   children?: ReactNode
@@ -11,6 +12,8 @@ export default function SlideUp({ children, offset = "0px" }: Props) {
   const ref = useRef(null)
 
   useEffect(() => {
+    const currentRef = ref.current // store ref.current in a variable
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -23,10 +26,17 @@ export default function SlideUp({ children, offset = "0px" }: Props) {
       { rootMargin: offset }
     )
 
-    if (ref.current) {
-      observer.observe(ref.current)
+    if (currentRef) {
+      observer.observe(currentRef)
     }
-  }, [ref])
+
+    // Cleanup observer using the stored ref
+    return () => {
+      if (currentRef) {
+        observer.unobserve(currentRef)
+      }
+    }
+  }, [offset]) // Add 'offset' to the dependency array
 
   return (
     <div ref={ref} className="relative opacity-0">
