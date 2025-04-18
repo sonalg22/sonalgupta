@@ -11,7 +11,8 @@ const skills = [
   { skill: "ML" },
   { skill: "HTML/CSS" },
   { skill: "Node.js" },
-  { skill: "Appscript" },
+  { skill: "MongoDB" },
+  { skill: "DBeaver"},
 ]
 
 const AboutSection = () => {

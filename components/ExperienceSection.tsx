@@ -22,7 +22,7 @@ const experiences = [
     company: "Khoury College of Comp. Sci",
     role: "OOD Java Teaching Assistant",
     dates: "Aug. 2024 – Dec. 2024",
-    location: "Needham, MA",
+    location: "Boston, MA",
     skills: ["Java", "OOD Principals", "Grading",],
   },
   {
@@ -42,7 +42,7 @@ const miscellaneous = [
   },
   {
     name: "NU Malhar Premier Classical Dance Team",
-    involvement: "Founder, Choreographer",
+    involvement: "Founder, , Captain, Choreographer",
   },
   {
     name: "Oasis",

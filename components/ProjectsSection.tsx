@@ -67,7 +67,7 @@ const ProjectsSection = () => {
       </h1>
 
       {/* Filter Dropdown */}
-      <div className="flex flex-col items-start mb-10 md:ml-10">
+      <div className="flex flex-col items-start mb-10">
         <label
           htmlFor="skillFilter"
           className="text-lg font-medium text-gray-700 dark:text-gray-200 mb-2"
