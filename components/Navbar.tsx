@@ -41,8 +41,8 @@ export default function Navbar() {
       <div className="justify-between md:items-center md:flex">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            <Link to="home">
-              <div className="container flex items-center space-x-2">
+            <Link to="home" smooth={true} duration={500}>
+              <div className="container flex items-center space-x-2 cursor-pointer">
                 <h2 className="text-2xl font-bold">Sonal Gupta</h2>
               </div>
             </Link>

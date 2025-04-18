@@ -62,7 +62,7 @@ const miscellaneous = [
 const ExperienceSection = () => {
     return (
       <section id="experience">
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="mb-60 max-w-6xl mx-auto px-4">
           <h1 className="my-10 text-center font-bold text-4xl">
             Experience
             <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded" />
