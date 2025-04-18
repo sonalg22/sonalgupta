@@ -2,17 +2,16 @@ import React from "react"
 import Image from "next/image"
 
 const skills = [
-  { skill: "HTML" },
-  { skill: "CSS" },
-  { skill: "JavaScript" },
-  { skill: "TypeScript" },
   { skill: "Python" },
+  { skill: "Java" },
+  { skill: "SQL" },
+  { skill: "TypeScript/Javascript" },
+  { skill: "AWS" },
   { skill: "React" },
-  { skill: "Next.js" },
-  { skill: "Tailwind CSS" },
-  { skill: "Git" },
-  { skill: "GitHub" },
-  { skill: "Jupyter Notebooks" },
+  { skill: "ML" },
+  { skill: "HTML/CSS" },
+  { skill: "Node.js" },
+  { skill: "Appscript" },
 ]
 
 const AboutSection = () => {
@@ -30,39 +29,37 @@ const AboutSection = () => {
               Get to know me!
             </h1>
             <p>
-              Hi, my name is Hosna and I am a{" "}
+              Hi, my name is Sonal and I am a{" "}
               <span className="font-bold">{"highly ambitious"}</span>,
               <span className="font-bold">{" self-motivated"}</span>, and
-              <span className="font-bold">{" driven"}</span> software engineer
-              based in Los Angeles, CA.
+              <span className="font-bold">{" driven"}</span> software engineer.
             </p>
             <br />
             <p>
-              I graduated from California State University, Northridge in 2019
-              with a BS in Computer Engineering and have been working in the
-              field ever since.
+              Academically, I am a senior Computer Science and Finance major
+              at Northeastern University with interests in data engineering,
+              back end development, AI/ML, and fintech.
             </p>
             <br />
             <p>
-              I have a wide range of hobbies and passions that keep me busy.
-              From reading, playing sports, traveling, to making YouTube videos,
-              I am always seeking new experiences and love to keep myself
-              engaged and learning new things.
+              I'm very involved in technical product development at Northeastern,
+              to help create software products for others, and I'm an active dancer,
+              musician, and leader. I'm looking to build my career path in a way
+              that combines many of my artistic interests with my technical expertise.
             </p>
             <br />
             <p>
-              I believe that you should{" "}
+              I'm so excited to use more of my love for'{" "}
               <span className="font-bold text-teal-500">
-                never stop growing
+                computer science
               </span>{" "}
-              and that&#39;s what I strive to do, I have a passion for
-              technology and a desire to always push the limits of what is
-              possible. I am excited to see where my career takes me and am
-              always open to new opportunities. 🙂
+              to aid in creating safe and clean designs that imrpove the 
+              world in some way. Please feel free to contact me for my resume,
+              or just to chat (all socials below).
             </p>
           </div>
           <div className="text-center md:w-1/2 md:text-left">
-            <h1 className="text-2xl font-bold mb-6">My Skills</h1>
+            <h1 className="text-2xl font-bold mb-6">My Top Skills</h1>
             <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
               {skills.map((item, idx) => {
                 return (
@@ -76,11 +73,11 @@ const AboutSection = () => {
               })}
             </div>
             <Image
-              src="/hero-image.png"
+              src="/code.png"
               alt=""
-              width={325}
-              height={325}
-              className="hidden md:block md:relative md:bottom-4 md:left-32 md:z-0"
+              width={400}
+              height={400}
+              className="hidden md:block md:relative md:top-10 md:left-0 md:z-0 rounded-lg"
             />
           </div>
         </div>
