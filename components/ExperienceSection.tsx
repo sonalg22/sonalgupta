@@ -42,19 +42,19 @@ const miscellaneous = [
   },
   {
     name: "NU Malhar Premier Classical Dance Team",
-    involvement: "Founder, , Captain, Choreographer",
+    involvement: "Founder, Captain, Choreographer",
   },
   {
     name: "Oasis",
-    involvement: "Web Developer - member",
+    involvement: "Web Developer, Member",
   },
   {
     name: "NU Robotics",
-    involvement: "Python Developer (OpenCV) - member",
+    involvement: "Python Developer (OpenCV), Member",
   },
   {
     name: "NU Aaroh",
-    involvement: "Musician, Vocalist, Pianist, Bassist",
+    involvement: "Vocalist, Pianist, Bassist",
   },
   // Add more clubs here if needed
 ]
