@@ -13,6 +13,13 @@ const projects = [
     skills: ["React", "Typescript", "MongoDB", "AI", "MongoDB",],
   },
   {
+    name: "Knight Runner",
+    description: "Collect coins as a knight in shining armour",
+    image: "/game1.png",
+    github: "https://github.com/sonalg22/knightCoinGame",
+    skills: ["GDScript", "Godot", "Game Dev",],
+  },
+  {
     name: "Bujo Bullet Journal App",
     description: "Stay organized and inspired—one bullet at a time.",
     image: "/bujo.png",
@@ -97,13 +104,14 @@ const ProjectsSection = () => {
             key={`${project.name}-${selectedSkill}`}
             className="flex flex-col items-center text-center bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg animate-slideUpFade"
           >
-            <Image
-              src={project.image}
-              alt={project.name}
-              width={500}
-              height={500}
-              className="rounded-xl shadow-xl"
-            />
+            <div className="w-full aspect-video relative rounded-xl shadow-xl overflow-hidden">
+              <Image
+                src={project.image}
+                alt={project.name}
+                fill
+                className="object-cover"
+              />
+            </div>
             <h2 className="text-2xl font-bold mt-4">{project.name}</h2>
             <p className="text-neutral-600 dark:text-neutral-400 mt-2">
               {project.description}
