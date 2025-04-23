@@ -51,7 +51,7 @@ const projects = [
     name: "Texas Employment Map",
     description: "An interactive map by county that shows Texas unemployment rates.",
     image: "/texas.png",
-    github: "https://github.com/example/project",
+    github: "https://github.com/sonalg22/texas-map",
     skills: ["Python", "Jupyter", "HTML/CSS"],
   },
 ]
