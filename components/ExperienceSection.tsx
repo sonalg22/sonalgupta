@@ -7,9 +7,9 @@ const experiences = [
   {
     company: "John Hancock",
     role: "SWE Intern Cloud Platforms Engineer",
-    dates: "May 2025 – Present",
+    dates: "May 2025 – Aug. 2025",
     location: "Boston, MA",
-    skills: ["Azure", "Cloud Platforms",],
+    skills: ["Azure", "Python Automation", "AI", "Terraform", "GoLang"],
   },
   {
     company: "Purple Carrot",
@@ -23,7 +23,7 @@ const experiences = [
     role: "OOD Java Teaching Assistant",
     dates: "Aug. 2024 – Dec. 2024",
     location: "Boston, MA",
-    skills: ["Java", "OOD Principals", "Grading",],
+    skills: ["Java", "OOD Principals", "Design Patterns",],
   },
   {
     company: "Wayfair",
@@ -38,7 +38,7 @@ const experiences = [
 const miscellaneous = [
   {
     name: "Generate | Product Development at NU",
-    involvement: "Project Lead, Lead Data Analyst",
+    involvement: "Chief of Data, Project Lead, Data Scientist",
   },
   {
     name: "NU Malhar Premier Classical Dance Team",

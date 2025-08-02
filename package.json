@@ -16,12 +16,17 @@
     "@types/react-dom": "18.0.10",
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.6",
-    "next": "13.1.6",
+    "lottie-react": "^2.4.1",
+    "next": "^15.4.5",
     "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
+    "react-parallax-tilt": "^1.7.304",
     "react-scroll": "^1.8.9",
+    "react-simple-typewriter": "^5.0.1",
+    "react-tsparticles": "^2.12.2",
+    "tsparticles": "^3.9.0",
     "typescript": "4.9.4"
   },
   "devDependencies": {

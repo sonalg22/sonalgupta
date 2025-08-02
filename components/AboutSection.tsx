@@ -1,5 +1,10 @@
+"use client";
+
 import React from "react"
 import Image from "next/image"
+import Lottie from "lottie-react";
+import Tilt from "react-parallax-tilt";
+import coderAnimation from "../public/animation1.json";
 
 const skills = [
   { skill: "Python" },
@@ -38,7 +43,7 @@ const AboutSection = () => {
             <br />
             <p>
               Academically, I am a senior Computer Science and Finance major
-              at Northeastern University with interests in data engineering,
+              at Northeastern University with interests in data/cloud engineering,
               back end development, AI + ML, and fin-tech.
             </p>
             <br />
@@ -73,13 +78,28 @@ const AboutSection = () => {
                 )
               })}
             </div>
-            <Image
-              src="/code.png"
-              alt=""
-              width={400}
-              height={400}
-              className="hidden md:block md:relative md:top-10 md:left-0 md:z-0 rounded-lg"
-            />
+
+  
+            <Tilt
+              tiltMaxAngleX={30}
+              tiltMaxAngleY={30}
+              perspective={1000}
+              transitionSpeed={1000}
+              scale={1.05}
+              gyroscope={true}
+              className="hidden md:block md:relative md:top-10 md:left-0 md:z-0 rounded-xl"
+            >
+              <div className="w-full h-full"> 
+                <Lottie
+                animationData={coderAnimation}
+                loop={true}
+                className="w-[400px] h-[400px] rounded-xl shadow-lg shadow-teal-500/40"
+              />
+              </div>
+              
+            </Tilt>
+
+
           </div>
         </div>
       </div>

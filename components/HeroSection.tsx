@@ -1,8 +1,9 @@
-"use client" // this is a client component
+"use client"
 import React from "react"
 import Image from "next/image"
 import { Link } from "react-scroll/modules"
 import { HiArrowDown } from "react-icons/hi"
+import { Typewriter } from "react-simple-typewriter"
 
 const HeroSection = () => {
   return (
@@ -18,17 +19,27 @@ const HeroSection = () => {
           />
         </div>
         <div className="md:mt-2 md:w-3/5">
-          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl">Hi, I&#39;m Sonal!</h1>
+          <h1 className="text-4xl font-bold mt-6 md:mt-0 md:text-7xl">
+            <span className="text-black dark:text-white">
+              <Typewriter
+                words={["Hi, I'm Sonal!"]}
+                loop={true}
+                cursor
+                cursorStyle="|"
+                typeSpeed={80}
+                deleteSpeed={50}
+                delaySpeed={1500}
+              />
+            </span>
+          </h1>
           <p className="text-lg mt-4 mb-6 md:text-2xl">
             I&#39;m a{" "}
             <span className="font-semibold text-teal-600">
               Software Engineer{" "}
             </span>
-            working towards creating technical solutions that
-            makes life easier and more meaningful, leaving an impact on the world.
+            working towards creating technical solutions that make life easier and more meaningful, leaving an impact on the world.
           </p>
           <div className="flex space-x-6 mt-4 text-left">
-            {/* Experience Button */}
             <Link
               to="experience"
               className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded shadow hover:bg-teal-700"

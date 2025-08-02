@@ -74,35 +74,18 @@ const ProjectsSection = () => {
       </h1>
 
       {/* Filter Dropdown */}
-      <div className="flex flex-col items-start mb-10">
-        <label
-          htmlFor="skillFilter"
-          className="text-lg font-medium text-gray-700 dark:text-gray-200 mb-2"
-        >
-          Filter by skill:
-        </label>
-        <select
-          id="skillFilter"
-          onChange={(e) =>
-            setSelectedSkill(e.target.value === "All" ? null : e.target.value)
-          }
-          className="border border-gray-300 dark:border-gray-700 rounded-md px-4 py-2 text-base font-medium text-gray-800 dark:text-white shadow-sm focus:outline-none focus:ring-2 focus:ring-teal-500 dark:bg-gray-800"
-        >
-          <option>All</option>
-          {allSkills.map((skill) => (
-            <option key={skill} value={skill}>
-              {skill}
-            </option>
-          ))}
-        </select>
-      </div>
-
-      {/* Project Grid */}
       <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
         {filteredProjects.map((project) => (
-          <div
+          <Link
             key={`${project.name}-${selectedSkill}`}
-            className="flex flex-col items-center text-center bg-white dark:bg-gray-800 p-4 rounded-xl shadow-lg animate-slideUpFade"
+            href={project.github}
+            target="_blank"
+            className="
+              flex flex-col justify-between items-center text-center 
+              bg-white dark:bg-gray-800 p-4 rounded-xl shadow-md animate-slideUpFade cursor-pointer
+              transform transition-all duration-300 ease-in-out
+              hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(20,184,166,0.4)]
+            "
           >
             <div className="w-full aspect-video relative rounded-xl shadow-xl overflow-hidden">
               <Image
@@ -119,9 +102,9 @@ const ProjectsSection = () => {
 
             {/* Skills */}
             <div className="flex flex-wrap justify-center gap-2 mt-4">
-              {project.skills.map((skill) => (
+              {project.skills.map((skill, index) => (
                 <span
-                  key={skill}
+                  key={`${skill}-${index}`}
                   className="bg-teal-100 text-teal-800 text-sm font-semibold px-3 py-1 rounded-full"
                 >
                   {skill}
@@ -129,16 +112,14 @@ const ProjectsSection = () => {
               ))}
             </div>
 
-            {/* GitHub Link Only */}
-            <div className="flex gap-4 mt-4">
-              <Link href={project.github} target="_blank">
-                <BsGithub
-                  size={28}
-                  className="hover:-translate-y-1 transition-transform cursor-pointer"
-                />
-              </Link>
+            {/* GitHub Icon pinned at bottom */}
+            <div className="mt-6">
+              <BsGithub
+                size={28}
+                className="hover:-translate-y-1 transition-transform"
+              />
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
