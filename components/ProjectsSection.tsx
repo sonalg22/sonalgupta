@@ -14,10 +14,17 @@ const projects = [
   },
   {
     name: "Knight Runner",
-    description: "Collect coins as a knight in shining armour",
+    description: "Collect coins as a knight in shining armour!",
     image: "/game1.png",
     github: "https://github.com/sonalg22/knightCoinGame",
     skills: ["GDScript", "Godot", "Game Dev",],
+  },
+  {
+    name: "Apple Catcher",
+    description: "Catch every apple! Beware of the bombs...",
+    image: "/apple.png",
+    github: "https://github.com/sonalg22/apple-game",
+    skills: ["Python", "Pygame", "Game Dev",],
   },
   {
     name: "Bujo Bullet Journal App",
