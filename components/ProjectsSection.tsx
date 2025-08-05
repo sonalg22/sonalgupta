@@ -40,6 +40,13 @@ const projects = [
     github: "https://github.com/qghop/cs3200AppSmith",
     skills: ["Database Design", "Mockaroo", "Appsmith", "SQL"],
   },
+    {
+    name: "Violent Crime Mapper",
+    description: "An interactive, mapped study about violent crimes in the US.",
+    image: "/violent-crime.png",
+    github: "https://github.com/sonalg22/violent-crime-study",
+    skills: ["Python", "Jupyter", "HTML/CSS"],
+  },
   {
     name: "Boston Outings",
     description: "A site with fun Boston attractions for college students.",
