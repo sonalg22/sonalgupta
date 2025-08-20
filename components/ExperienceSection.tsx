@@ -9,14 +9,14 @@ const experiences = [
     role: "SWE Intern Cloud Platforms Engineer",
     dates: "May 2025 – Aug. 2025",
     location: "Boston, MA",
-    skills: ["Azure", "Python Automation", "AI", "Terraform", "GoLang"],
+    skills: ["Azure", "Kubernetes", "Python Automation", "AI", "Terraform", "GoLang"],
   },
   {
     company: "Purple Carrot",
     role: "Data Engineering and Architecture Co-op",
     dates: "Jan. 2025 – May 2025",
     location: "Needham, MA",
-    skills: ["Python", "Appscript", "AWS", "ML", "Pipelines"],
+    skills: ["Python", "Appscript", "AWS", "ML", "GCP", "Pipelines"],
   },
   {
     company: "Khoury College of Comp. Sci",
