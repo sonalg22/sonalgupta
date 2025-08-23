@@ -26,6 +26,13 @@ const projects = [
     github: "https://github.com/sonalg22/apple-game",
     skills: ["Python", "Pygame", "Game Dev",],
   },
+    {
+    name: "Travel Concierge",
+    description: "A friendly chatbot for all your (time?) travel questions!",
+    image: "/travelConc.png",
+    github: "https://github.com/sonalg22/chatbot-practical",
+    skills: ["Python", "React", "Open AI", "APIs"],
+  },
   {
     name: "Bujo Bullet Journal App",
     description: "Stay organized and inspired—one bullet at a time.",
