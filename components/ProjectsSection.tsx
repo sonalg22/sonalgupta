@@ -10,28 +10,32 @@ const projects = [
     description: "A platform for all your tech questions.",
     image: "/swe.png",
     github: "https://github.com/sonalg22/updatedStackOverflow",
-    skills: ["React", "Typescript", "MongoDB", "AI", "MongoDB",],
+    skills: ["React", "Typescript", "MongoDB", "AI"],
+    category: "Full-Stack Applications",
   },
   {
     name: "Knight Runner",
     description: "Collect coins as a knight in shining armour!",
     image: "/game1.png",
     github: "https://github.com/sonalg22/knightCoinGame",
-    skills: ["GDScript", "Godot", "Game Dev",],
+    skills: ["GDScript", "Godot", "Game Dev"],
+    category: "Games",
   },
   {
     name: "Apple Catcher",
     description: "Catch every apple! Beware of the bombs...",
     image: "/apple.png",
     github: "https://github.com/sonalg22/apple-game",
-    skills: ["Python", "Pygame", "Game Dev",],
+    skills: ["Python", "Pygame", "Game Dev"],
+    category: "Games",
   },
-    {
+  {
     name: "Travel Concierge",
     description: "A friendly chatbot for all your (time?) travel questions!",
     image: "/travelConc.png",
     github: "https://github.com/sonalg22/chatbot-practical",
     skills: ["Python", "React", "Open AI", "APIs"],
+    category: "Full-Stack Applications",
   },
   {
     name: "Bujo Bullet Journal App",
@@ -39,6 +43,7 @@ const projects = [
     image: "/bujo.png",
     github: "https://github.com/sonalg22/bulletJournal",
     skills: ["Java", "Scenebuilder FMXL", "Gradle", "Github"],
+    category: "Full-Stack Applications",
   },
   {
     name: "Course Registration App",
@@ -46,13 +51,15 @@ const projects = [
     image: "/cs3200.png",
     github: "https://github.com/qghop/cs3200AppSmith",
     skills: ["Database Design", "Mockaroo", "Appsmith", "SQL"],
+    category: "Full-Stack Applications",
   },
-    {
+  {
     name: "Violent Crime Mapper",
     description: "An interactive, mapped study about violent crimes in the US.",
     image: "/violent-crime.png",
     github: "https://github.com/sonalg22/violent-crime-study",
     skills: ["Python", "Jupyter", "HTML/CSS"],
+    category: "Data Engineering",
   },
   {
     name: "Boston Outings",
@@ -60,6 +67,7 @@ const projects = [
     image: "/bostonOutings.png",
     github: "https://github.com/sonalg22/bostonOutings",
     skills: ["Javascript", "HTML/CSS", "Design"],
+    category: "Full-Stack Applications",
   },
   {
     name: "Stock Prediction Model",
@@ -67,6 +75,7 @@ const projects = [
     image: "/stocks.png",
     github: "https://github.com/sonalg22/ds4200wesite.github.io",
     skills: ["Python", "AI", "Jupyter", "HTML/CSS"],
+    category: "Data Engineering",
   },
   {
     name: "Texas Employment Map",
@@ -74,17 +83,18 @@ const projects = [
     image: "/texas.png",
     github: "https://github.com/sonalg22/texas-map",
     skills: ["Python", "Jupyter", "HTML/CSS"],
+    category: "Data Engineering",
   },
 ]
 
-const allSkills = [...new Set(projects.flatMap((project) => project.skills))]
+const categories = ["All", "Full-Stack Applications", "Data Engineering", "Games"]
 
 const ProjectsSection = () => {
-  const [selectedSkill, setSelectedSkill] = useState<string | null>(null)
+  const [selectedCategory, setSelectedCategory] = useState<string>("All")
 
   const filteredProjects =
-    selectedSkill && selectedSkill !== "All"
-      ? projects.filter((p) => p.skills.includes(selectedSkill))
+    selectedCategory !== "All"
+      ? projects.filter((p) => p.category === selectedCategory)
       : projects
 
   return (
@@ -94,11 +104,30 @@ const ProjectsSection = () => {
         <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded" />
       </h1>
 
-      {/* Filter Dropdown */}
+      {/* Category Filter Buttons */}
+      <div className="flex justify-center gap-4 mb-10 flex-wrap">
+        {categories.map((cat) => (
+          <button
+            key={cat}
+            onClick={() => setSelectedCategory(cat)}
+            className={`
+              px-4 py-2 rounded-xl font-semibold transition-all duration-300
+              ${selectedCategory === cat
+                ? "bg-teal-500 text-white"
+                : "bg-white dark:bg-gray-800 text-gray-800 dark:text-white shadow-md"}
+              hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(20,184,166,0.4)]
+            `}
+          >
+            {cat}
+          </button>
+        ))}
+      </div>
+
+      {/* Project Cards */}
       <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
         {filteredProjects.map((project) => (
           <Link
-            key={`${project.name}-${selectedSkill}`}
+            key={project.name}
             href={project.github}
             target="_blank"
             className="
