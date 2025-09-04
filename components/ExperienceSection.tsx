@@ -4,6 +4,13 @@ import { BsBriefcaseFill } from "react-icons/bs"
 import SlideUp from "./SlideUp"
 
 const experiences = [
+    {
+    company: "Revin",
+    role: "AI Engineer",
+    dates: "Aug. 2025 – Present",
+    location: "New York City, NY",
+    skills: ["LLM", "AI", "Python", "Langchain"],
+  },
   {
     company: "John Hancock",
     role: "SWE Intern Cloud Platforms Engineer",
