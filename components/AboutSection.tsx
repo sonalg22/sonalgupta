@@ -10,14 +10,14 @@ const skills = [
   { skill: "Python" },
   { skill: "Java" },
   { skill: "SQL" },
-  { skill: "TypeScript/Javascript" },
+  { skill: "TypeScript" },
+  { skill: "Ruby on Rails" },
   { skill: "AWS" },
   { skill: "React" },
   { skill: "ML" },
   { skill: "HTML/CSS" },
   { skill: "Node.js" },
   { skill: "MongoDB" },
-  { skill: "DBeaver"},
 ]
 
 const AboutSection = () => {
@@ -37,30 +37,30 @@ const AboutSection = () => {
             <p>
               Hi, my name is Sonal and I am a{" "}
               <span className="font-bold">{"highly ambitious"}</span>,
-              <span className="font-bold">{" self-motivated"}</span>, and
-              <span className="font-bold">{" driven"}</span> software engineer.
+              <span className="font-bold">{" problem-driven"}</span>, and
+              <span className="font-bold">{" impactful"}</span> software engineer.
             </p>
             <br />
             <p>
-              Academically, I am a senior Computer Science and Finance major
-              at Northeastern University with interests in data/cloud engineering,
+              Academically, I have a B.S. in Computer Science and Finance from
+              Northeastern University, Boston. I'm interested in data/cloud engineering,
               back end development, AI + ML, and fin-tech.
             </p>
             <br />
             <p>
-              I&#39;m very involved in technical product development at Northeastern,
-              to help create software products for others, and I&#39;m an active dancer,
+              I&#39;ve been very involved in technical product development, assisting in
+              launching AI startups through NEU Generate. Outside of tech, I&#39;m also an active dancer,
               musician, and leader. I&#39;m looking to build my career path in a way
-              that combines many of my artistic interests with my technical expertise.
+              that combines many of my artistic creativity with my technical expertise.
             </p>
             <br />
             <p>
               I&#39;m so excited to use more of my love for{" "}
               <span className="font-bold text-teal-500">
-                computer science
+                efficient problem solving in creative ways
               </span>{" "}
-              to aid in creating safe and clean designs that improve the 
-              world in some way. Please feel free to contact me for my resume,
+              to aid in creating safe, clean, and scalable designs that improve the 
+              world in an impactful way. Please feel free to contact me for my resume,
               or just to chat (all socials below).
             </p>
           </div>

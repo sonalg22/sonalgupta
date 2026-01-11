@@ -37,7 +37,7 @@ const HeroSection = () => {
             <span className="font-semibold text-teal-600">
               Software Engineer{" "}
             </span>
-            working towards creating technical solutions that make life easier and more meaningful, leaving an impact on the world.
+            working towards creating scalable technical solutions that make life easier and more meaningful, leaving an impact on the world.
           </p>
           <div className="flex space-x-6 mt-4 text-left">
             <Link

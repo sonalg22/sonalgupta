@@ -4,10 +4,17 @@ import { BsBriefcaseFill } from "react-icons/bs"
 import SlideUp from "./SlideUp"
 
 const experiences = [
-    {
+  {
+    company: "Purple Carrot",
+    role: "Software Engineering Co-op",
+    dates: "Jan. 2026 – June 2026",
+    location: "Needham, MA",
+    skills: ["Ruby", "Rails", "React", "PostgreSQL"],
+  },
+  {
     company: "Revin",
     role: "AI Engineer",
-    dates: "Aug. 2025 – Present",
+    dates: "Aug. 2025 – Dec. 2025",
     location: "New York City, NY",
     skills: ["LLM", "AI", "Python", "Langchain"],
   },
@@ -39,13 +46,12 @@ const experiences = [
     location: "Boston, MA",
     skills: ["Typescript", "SQL/GBQ", "Looker Studio", "Databases"],
   },
-  // Add up to 5 experiences here
 ]
 
 const miscellaneous = [
   {
     name: "Generate | Product Development at NU",
-    involvement: "Chief of Data, Project Lead, Data Scientist",
+    involvement: "Chief of Data, Project Lead, Data Engineer",
   },
   {
     name: "NU Malhar Premier Classical Dance Team",
@@ -56,14 +62,9 @@ const miscellaneous = [
     involvement: "Web Developer, Member",
   },
   {
-    name: "NU Robotics",
-    involvement: "Python Developer (OpenCV), Member",
-  },
-  {
     name: "NU Aaroh",
     involvement: "Vocalist, Pianist, Bassist",
   },
-  // Add more clubs here if needed
 ]
 
 const ExperienceSection = () => {

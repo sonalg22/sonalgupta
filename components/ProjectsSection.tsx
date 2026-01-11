@@ -11,7 +11,7 @@ const projects = [
     image: "/swe.png",
     github: "https://github.com/sonalg22/updatedStackOverflow",
     skills: ["React", "Typescript", "MongoDB", "AI"],
-    category: "Full-Stack Applications",
+    categories: ["Full-Stack Applications", "AI"],
   },
   {
     name: "Knight Runner",
@@ -19,7 +19,7 @@ const projects = [
     image: "/game1.png",
     github: "https://github.com/sonalg22/knightCoinGame",
     skills: ["GDScript", "Godot", "Game Dev"],
-    category: "Games",
+    categories: ["Games"],
   },
   {
     name: "Apple Catcher",
@@ -27,7 +27,7 @@ const projects = [
     image: "/apple.png",
     github: "https://github.com/sonalg22/apple-game",
     skills: ["Python", "Pygame", "Game Dev"],
-    category: "Games",
+    categories: "Games",
   },
   {
     name: "Travel Concierge",
@@ -35,7 +35,7 @@ const projects = [
     image: "/travelConc.png",
     github: "https://github.com/sonalg22/chatbot-practical",
     skills: ["Python", "React", "Open AI", "APIs"],
-    category: "Full-Stack Applications",
+    categories: ["Full-Stack Applications", "AI"],
   },
   {
     name: "Bujo Bullet Journal App",
@@ -43,7 +43,7 @@ const projects = [
     image: "/bujo.png",
     github: "https://github.com/sonalg22/bulletJournal",
     skills: ["Java", "Scenebuilder FMXL", "Gradle", "Github"],
-    category: "Full-Stack Applications",
+    categories: "Full-Stack Applications",
   },
   {
     name: "Course Registration App",
@@ -51,7 +51,7 @@ const projects = [
     image: "/cs3200.png",
     github: "https://github.com/qghop/cs3200AppSmith",
     skills: ["Database Design", "Mockaroo", "Appsmith", "SQL"],
-    category: "Full-Stack Applications",
+    categories: "Full-Stack Applications",
   },
   {
     name: "Violent Crime Mapper",
@@ -59,7 +59,7 @@ const projects = [
     image: "/violent-crime.png",
     github: "https://github.com/sonalg22/violent-crime-study",
     skills: ["Python", "Jupyter", "HTML/CSS"],
-    category: "Data Engineering",
+    categories: "Data Engineering",
   },
   {
     name: "Boston Outings",
@@ -67,7 +67,7 @@ const projects = [
     image: "/bostonOutings.png",
     github: "https://github.com/sonalg22/bostonOutings",
     skills: ["Javascript", "HTML/CSS", "Design"],
-    category: "Full-Stack Applications",
+    categories: "Full-Stack Applications",
   },
   {
     name: "Stock Prediction Model",
@@ -75,7 +75,7 @@ const projects = [
     image: "/stocks.png",
     github: "https://github.com/sonalg22/ds4200wesite.github.io",
     skills: ["Python", "AI", "Jupyter", "HTML/CSS"],
-    category: "Data Engineering",
+    categories: "Data Engineering",
   },
   {
     name: "Texas Employment Map",
@@ -83,19 +83,21 @@ const projects = [
     image: "/texas.png",
     github: "https://github.com/sonalg22/texas-map",
     skills: ["Python", "Jupyter", "HTML/CSS"],
-    category: "Data Engineering",
+    categories: "Data Engineering",
   },
 ]
 
-const categories = ["All", "Full-Stack Applications", "Data Engineering", "Games"]
+const categories = ["All", "Full-Stack Applications", "Data Engineering", "Games", "Leadership", "AI"]
 
 const ProjectsSection = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("All")
 
   const filteredProjects =
-    selectedCategory !== "All"
-      ? projects.filter((p) => p.category === selectedCategory)
-      : projects
+  selectedCategory !== "All"
+    ? projects.filter((p) =>
+        p.categories?.includes(selectedCategory)
+      )
+    : projects
 
   return (
     <section id="projects">
