@@ -43,7 +43,7 @@ const AboutSection = () => {
             <br />
             <p>
               Academically, I have a B.S. in Computer Science and Finance from
-              Northeastern University, Boston. I'm interested in data/cloud engineering,
+              Northeastern University, Boston. I am interested in data/cloud engineering,
               back end development, AI + ML, and fin-tech.
             </p>
             <br />
